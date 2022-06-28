@@ -1,18 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import PizzaComponent from './components/PizzaComponent/PizzaComponent';
-import PizzaData from './Data/pizza.json'
+import Timer from './components/Timer/timer';
+import Timer2 from './components/Timer2/timer2';
 
-console.log(PizzaData);
-
-const pizzaTypes = PizzaData.map(element => <PizzaComponent name={element.pizza_name} price={element.price} />)
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <PizzaComponent name="Kolbászos-rájás Pizza" price="1550" />
-        {pizzaTypes}
+        {/* CLASS BASED COMPONENT */}
+        {/* <Timer /> */}
+        <Timer2 />
         <p>
           Edit <code>src/App.js</code> and save to reload.
           Our communication has transcended to a new level.
