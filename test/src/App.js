@@ -4,7 +4,6 @@ import Timer from './components/Timer/timer';
 import Timer2 from './components/Timer2/timer2';
 import { useState } from 'react';
 
-
 function App() {
   const [showTimer, setShowTimer] = useState(true);
 

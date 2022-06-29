@@ -4,7 +4,8 @@ class Timer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            time: 0
+            time: 0,
+            blue: false
         }
         setInterval(() => { this.incrementTimer() }, 1000);
 
@@ -33,7 +34,7 @@ class Timer extends React.Component {
         // console.log("render happened!")
         return (
             <>
-                <div>
+                <div className={(this.state.time % 5 === 0) ? "green" : ""}>
                     {this.state.time}
                 </div>
                 <button onClick={() => { this.incrementTimer() }}>Increment</button>
