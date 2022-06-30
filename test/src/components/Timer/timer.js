@@ -4,16 +4,15 @@ class Timer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            time: 0,
-            blue: false
+            time: 0
         }
-        setInterval(() => { this.incrementTimer() }, 1000);
 
         console.log("Constructor called!");
     }
 
     componentDidMount() {
         console.log("Component created");
+        setInterval(() => { this.incrementTimer() }, 1000);
     }
 
     componentDidUpdate() {

@@ -16,7 +16,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* CLASS BASED COMPONENT */}
-        {showTimer ? <Timer /> : <div>No Timer for you!</div>}
+        {/* {showTimer ? <Timer /> : <div>No Timer for you!</div>}
+        <button onClick={() => showTimer ? setShowTimer(false) : setShowTimer(true)}>Hide</button> */}
+        {showTimer ? <Timer2 /> : <div>No Timer for you!</div>}
         <button onClick={() => showTimer ? setShowTimer(false) : setShowTimer(true)}>Hide</button>
         <p>
           Edit <code>src/App.js</code> and save to reload.
